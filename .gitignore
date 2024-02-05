@@ -1,0 +1,10 @@
+# Ignorar el directorio node_modules
+node_modules/
+
+postcss.config.js
+talwind.config.js
+
+package-lock.json
+package.json
+
+css/
