@@ -1,1 +1,267 @@
-Trabajar aqu¡  
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+      <style>
+         @font-face {
+            font-family: "proxima-nova-bold";
+            src: url("../fonts-afh/proximanova-bold-webfont.woff");
+         }
+
+         @font-face {
+            font-family: "proxima-nova-semibold";
+            src: url("../fonts-afh/proximanova-semibold-webfont.woff");
+         }
+
+         @font-face {
+            font-family: "proxima-nova-light";
+            src: url("../fonts-afh/proximanova-light-webfont.woff");
+         }
+      </style>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+            content: ["./**/*.{html,js}"],
+            theme: {
+               extend: {
+                  fontFamily: {
+                     "proxima-light": ["proxima-nova-light", "helvetica", "sans-serif"],
+                     "proxima-semibold": ["proxima-nova-semibold", "helvetica", "sans-serif"],
+                     "proxima-bold": ["proxima-nova-bold", "helvetica", "sans-serif"],
+                  },
+                  colors: {
+                     "fondo-negro": "#111111",
+                     title: "#333333",
+                     paragraph: "#757575",
+                     footer: "#F5F5F5",
+                  },
+                  spacing: {
+                     header: "5.75rem",
+                  },
+                  backgroundImage: {
+                     back: "url('../imgs-afh/back.jpg')",
+                     logo: "url('../imgs-afh/logo.png')",
+                  },
+                  with: {
+                     fifty: "50%",
+                  },
+                  screens: {
+                     sm: "640px",
+                     // => @media (min-width: 640px) { ... }
+
+                     md: "768px",
+                     // => @media (min-width: 768px) { ... }
+                     midmd: "880px",
+
+                     lg: "1024px",
+                     // => @media (min-width: 1024px) { ... }
+
+                     midlg: "1068px",
+
+                     xl: "1248px",
+                     // => @media (min-width: 1280px) { ... }
+
+                     "2xl": "1536px",
+                     // => @media (min-width: 1536px) { ... }
+                  },
+                  boxShadow: {
+                     "box-card": "0px 4px 8px 0px rgba(0, 0, 0, 0.2)",
+                     "box-card-init": "0 1px 4px 0px rgba(0, 0, 0, 0.2);",
+                  },
+                  letterSpacing: {
+                     "ls-sm": "0.2rem",
+                  },
+               },
+            },
+         };
+      </script>
+      <title>Adham Dannaway</title>
+   </head>
+   <body>
+      <div class="w-full m-0 p-0">
+         <header class="w-full">
+            <div
+               class="h-header px-20 md:px-24 midlg:px-32 xl:px-60 bg-fondo-negro text-white flex flex-row justify-between items-center">
+               <div class="">
+                  <!-- logo -->
+                  <a href="#">
+                     <img
+                        class="min-w-[60px] min-h-[60px] w-[60px] h-[60px] midlg:w-[68px] midlg:h-[68px] xl:w-[78px] xl:h-[78px]"
+                        src="../imgs-afh/logo.png"
+                        alt="" />
+                  </a>
+               </div>
+               <div>
+                  <!-- lista -->
+                  <ul class="flex flex-row justify-around gap-6">
+                     <li
+                        class="px-2 font-proxima-light text-[18px] hover:text-gray-500 transition ease-in-out">
+                        <a
+                           class="text-[14px] midlg:text-[16px] xl:text-[18px]"
+                           href="https://www.adhamdannaway.com/about"
+                           >about</a
+                        >
+                     </li>
+                     <li
+                        class="px-2 font-proxima-light text-[18px] hover:text-gray-500 transition ease-in-out">
+                        <a
+                           class="text-[14px] midlg:text-[16px] xl:text-[18px]"
+                           href="https://www.adhamdannaway.com/ui-design-book"
+                           >book</a
+                        >
+                     </li>
+                     <li
+                        class="px-2 font-proxima-light text-[18px] hover:text-gray-500 transition ease-in-out">
+                        <a
+                           class="text-[14px] midlg:text-[16px] xl:text-[18px]"
+                           href="https://www.adhamdannaway.com/portfolio"
+                           >portfolio</a
+                        >
+                     </li>
+                     <li
+                        class="px-2 font-proxima-light text-[18px] hover:text-gray-500 transition ease-in-out">
+                        <a
+                           class="text-[14px] midlg:text-[16px] xl:text-[18px]"
+                           href="https://www.adhamdannaway.com/blog"
+                           >blog</a
+                        >
+                     </li>
+                     <li
+                        class="px-2 font-proxima-light text-[18px] hover:text-gray-500 transition ease-in-out">
+                        <a
+                           class="text-[14px] midlg:text-[16px] xl:text-[18px]"
+                           href="https://www.adhamdannaway.com/contact"
+                           >contact</a
+                        >
+                     </li>
+                     <li class="px-2 pl-5">
+                        <!-- social media -->
+                        <ul class="flex flex-row justify-center gap-6">
+                           <li>
+                              <a href="https://twitter.com/AdhamDannaway"
+                                 ><img
+                                    class="max-w-7"
+                                    src="../imgs-afh/icons8-twitter.svg"
+                                    alt=""
+                              /></a>
+                           </li>
+                           <li>
+                              <a href="https://au.linkedin.com/in/adhamdannaway"
+                                 ><img
+                                    class="max-w-7"
+                                    src="../imgs-afh/icons8-linkedin.svg"
+                                    alt=""
+                              /></a>
+                           </li>
+                           <li>
+                              <a href="https://www.facebook.com/iLikeAdham/"
+                                 ><img
+                                    class="max-w-7"
+                                    src="../imgs-afh/icons8-facebook-nuevo.svg"
+                                    alt=""
+                              /></a>
+                           </li>
+                           <li>
+                              <a href="https://www.instagram.com/adham.dannaway/"
+                                 ><img
+                                    class="max-w-7"
+                                    src="../imgs-afh/icons8-instagram.svg"
+                                    alt=""
+                              /></a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </header>
+
+         <main>
+            <div
+               class="h-screen max-h-[600px] flex justify-center bg-back bg-no-repeat bg-center py-[165px] mb-20">
+               <div class="px-5">
+                  <div
+                     class="w-full grid grid-cols-2 gap-[370px] md:gap-[400px] midlg:gap-[430px] xl:gap-[470px]">
+                     <div class="flex flex-col gap-3">
+                        <h1
+                           class="font-bold font-proxima-bold text-[40px] midlg:text-[60px] xl:text-[89.6px] tracking-normal text-title">
+                           designer
+                        </h1>
+                        <p class="text-paragraph text-[10px] midlg:text-[12px] xl:text-[16px]">
+                           Product designer specialising in UI <br />
+                           design and design systems
+                        </p>
+                     </div>
+                     <div>
+                        <h1
+                           class="font-bold font-proxima-bold text-[40px] midlg:text-[60px] xl:text-[89.6px] tracking-normal text-title">
+                           <span><</span>coder<span>></span>
+                        </h1>
+                        <p class="text-paragraph text-[10px] midlg:text-[12px] xl:text-[16px]">
+                           Front-end developer who writes <br />
+                           clean, elegant and efficient code
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <div class="w-full flex justify-center items-center mb-20 flex-col gap-5">
+            <div class="w-4/6 flex flex-row justify-center items-center">
+               <hr class="w-1/3 border-1" />
+               <h3
+                  class="w-1/3 px-4 text-center text-paragraph font-proxima-semibold text-[.875rem] tracking-[.2rem] uppercase">
+                  Some of my latest work
+               </h3>
+               <hr class="w-1/3 border-1" />
+            </div>
+            <div class="w-4/6 grid grid-cols-3 gap-6 px-4">
+               <div
+                  class="shadow-box-card-init hover:shadow-box-card rounded-lg transition ease-in-out cursor-pointer">
+                  <div class="p-3">
+                     <img src="../imgs-afh/card2.jpg" alt="" />
+                  </div>
+                  <div class="p-3">
+                     <h5 class="text-title">My UI design book</h5>
+                     <p class="text-paragraph">Book</p>
+                  </div>
+               </div>
+               <div
+                  class="shadow-box-card-init hover:shadow-box-card rounded-lg transition ease-in-out cursor-pointer">
+                  <div class="p-3">
+                     <img src="../imgs-afh/card3.jpg" alt="" />
+                  </div>
+                  <div class="p-3">
+                     <h5 class="text-title">Creatinf a lean design system</h5>
+                     <p class="text-paragraph">Design system</p>
+                  </div>
+               </div>
+               <div
+                  class="shadow-box-card-init hover:shadow-box-card rounded-lg transition ease-in-out cursor-pointer">
+                  <div class="p-3">
+                     <img src="../imgs-afh/card1.jpg" alt="" />
+                  </div>
+                  <div class="p-3">
+                     <h5 class="text-title">Interior design news feed</h5>
+                     <p class="text-paragraph">Side project</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer class="w-full">
+            <div class="h-24 bg-footer flex flex-row justify-between items-center px-56">
+               <p class="text-paragraph">Â© 2024 Adham Dannaway</p>
+               <ul class="flex flex-row gap-4 text-paragraph">
+                  <li><a href="">about</a></li>
+                  <li><a href="">book</a></li>
+                  <li><a href="">portfolio</a></li>
+                  <li><a href="">blog</a></li>
+                  <li><a href="">contact</a></li>
+               </ul>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
