@@ -1,9 +1,1 @@
-node_modules/
-
-postcss.config-afh.js
-tailwind.config-afh.js
-
-package-afh.json
-package-lock-afh.json
-
 src-afh/
