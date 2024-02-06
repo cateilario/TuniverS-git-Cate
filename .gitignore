@@ -1,21 +1,9 @@
-<<<<<<< HEAD
 node_modules/
 
-postcss.config.js
-tailwind.config.js
-=======
-# Ignorar el directorio node_modules
-node_modules/
+postcss.config-afh.js
+tailwind.config-afh.js
 
-postcss.config.js
-talwind.config.js
->>>>>>> 6a84cbdc874f909278bfbc7b1e1676373fcc867d
+package-afh.json
+package-lock-afh.json
 
-package-lock.json
-package.json
-
-<<<<<<< HEAD
-src/
-=======
-css/
->>>>>>> 6a84cbdc874f909278bfbc7b1e1676373fcc867d
+src-afh/
