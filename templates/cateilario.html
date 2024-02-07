@@ -15,6 +15,7 @@
                     backgroundColor: {
                         navColor: "#111111",
                         sectionBackground: "#fafafa",
+                        footerbg: "#f5f5f5"
                     },
                     backgroundImage: {
                         'hero-pattern': "url('/img-ci/adham-dannaway-designer-coder.jpg')",
@@ -25,9 +26,12 @@
                     },
                     textColor: {
                         h1color: "#333333",
+                        h3color: "#757575",
                     },
                     boxShadow: {
                         "section-shadow": "inset -1px 0px 4px 0px rgba(0, 0, 0, 0.1)",
+                        "card-shadow": "0 1px 4px 0px rgba(0, 0, 0, 0.2)",
+                        "card-hover-shadow": "0px 4px 8px 0px rgba(0, 0, 0, 0.2)",
                     },
                 },
             },
@@ -50,11 +54,11 @@
             <a href=""><img src="/img-ci/logo.png" alt="Logo barra navegación" class="w-16"></a>
             <nav class="flex gap-20">
                 <ul class="flex gap-8">
-                    <a href="#"><li class="hover:text-gray-400">about</li></a>
-                    <a href="#"><li class="hover:text-gray-400">book</li></a>
-                    <a href="#"><li class="hover:text-gray-400">portfolio</li></a>
-                    <a href="#"><li class="hover:text-gray-400">blog</li></a>
-                    <a href="#"><li class="hover:text-gray-400">contact</li></a>
+                    <a href="#"><li class="hover:text-gray-400 transition 3s ease-in-out">about</li></a>
+                    <a href="#"><li class="hover:text-gray-400 transition 3s ease-in-out">book</li></a>
+                    <a href="#"><li class="hover:text-gray-400 transition ease-in-out">portfolio</li></a>
+                    <a href="#"><li class="hover:text-gray-400 transition ease-in-out">blog</li></a>
+                    <a href="#"><li class="hover:text-gray-400 transition ease-in-out">contact</li></a>
                 </ul>
                 <ul class="flex gap-6">
                     <a href="">
@@ -72,39 +76,69 @@
             </ul>
         </nav>
     </header>
-    
-        <section class="container relative">
-            <div class="relative left-40 top-52 w-1/4 z-10 flex flex-col gap-5">
-                <h1 class="font-sansbold text-h1color tracking-tighter text-7xl">designer</h1>
+
+    <section class="container relative">
+        <div class="relative left-40 top-52 w-1/4 z-10 flex flex-col gap-5">
+            <h1 class="font-sansbold text-h1color tracking-tighter text-7xl">designer</h1>
                 <p class="text-gray-400 text-[1rem] text-balance">Product designer specialising in UI design and design systems.</p>
-            </div>
-            <div class="absolute inset-0">
-                <img src="/img-ci/fondo.jpg" alt="" class="block mx-auto">
-            </div>
-            <div class="absolute right-36 top-52 w-1/4 z-10 flex flex-col gap-5">
-                <h1 class="font-sansbold text-h1color tracking-tighter text-7xl">&lt;coder></h1>
-                <p class="text-gray-400 text-[1rem] text-balance">Front end developer who writes clean, elegant and efficient code.</p>
-            </div>
-        </section>
-        
+        </div>
+        <div class="absolute inset-0">
+            <img src="/img-ci/fondo.jpg" alt="" class="m-auto">
+        </div>
+        <div class="absolute right-36 top-52 w-1/4 z-10 flex flex-col gap-5">
+            <h1 class="font-sansbold text-h1color tracking-tighter text-7xl">&lt;coder></h1>
+            <p class="text-gray-400 text-[1rem] text-balance">Front end developer who writes clean, elegant and efficient code.</p>
+        </div>
+    </section>    
 
-        <section class="bg-sectionBackground shadow-section-shadow relative">
-            <div class="">
-                <h3>SOME OF MY LATEST WORK</h3>
-                <div>
+    <section class="mt-[59.3vh] w-full shadow-section-shadow py-16 m-auto">
+        <div class="w-[70%] m-auto">
+            <header class="flex items-center justify-center">
+                <hr class="w-1/3">
+                <h3 class="w-1/3 text-center text-[.85rem] text-h3color font-sansbold tracking-[.1rem]">SOME OF MY LATEST WORK</h3>
+                <hr class="w-1/3">
+            </header>
 
+            <div class="flex justify-around gap-5 py-4">
+            <!-- Card 1 -->
+            <div class="p-2 border rounded-md shadow-card-shadow hover:shadow-card-hover-shadow cursor-pointer transition 5s ease-in">
+                <img src="/img-ci/card2.jpg" alt="Image 1" class="object-cover rounded-md">
+                <div class="px-3">
+                <p class="text-left mt-3">My UI design book</p>
+                <p class="text-left text-gray-500 text-[.9rem]">Book</p>
                 </div>
-                <div>
-
-                </div>
-                <div>
-
+            </div>
+            <!-- Card 2 -->
+            <div class="p-2 border rounded-md shadow-card-shadow hover:shadow-card-hover-shadow cursor-pointer transition 5s ease-in">
+                <img src="/img-ci/card3.jpg" alt="Image 2" class="object-cover rounded-md">
+                <div class="px-3">
+                    <p class="text-left mt-3">Creating a lean design system</p>
+                    <p class="text-left text-gray-500 text-[.9rem]">Design System</p>
                 </div>
             </div>
+            <!-- Card 3 -->
+            <div class="p-2 border rounded-md shadow-card-shadow hover:shadow-card-hover-shadow cursor-pointer transition 5s ease-in">
+                <img src="/img-ci/card1.jpg" alt="Image 3" class="object-cover rounded-md">
+                <div class="px-3">
+                <p class="text-left mt-3">Interior design news feed</p>
+                <p class="text-left text-gray-500 text-[.9rem]">Side project</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
-
-    <footer>
-
+        
+    <footer class="w-full h-[5.5rem] bg-footerbg shadow-card-shadow flex justify-center items-center">
+        <div class="w-[70%] flex justify-between text-[.88rem] text-h3color hover:text-black">
+            <a href="">© 2024 Caterina Ilario</a>
+            <ul class="flex gap-4">
+                <li><a href="">about</a></li>
+                <li><a href="">book</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
